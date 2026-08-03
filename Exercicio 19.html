@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação DOM por ID</title>
+</head>
+
+<body>
+    <input type="text" id="Quantidade" onkeyup="mostrarValor()">
+    <input type="text" id="Valor" onkeyup="mostrarValor()">
+    <input type="text" id="saida" disabled="disabled">
+    <script>
+        function mostrarValor() {
+            // capturando o valor
+            var texto = document.getElementById('Quantidade').value;
+            var texto = document.getElementById('Valor').value;
+
+            // enviando o valor 
+            var soma = Number(Quantidade* 1.99) + Number(saida);
+            document.getElementById('saida').value = soma;
+        }
+    </script>
+</body>
+
+</html>
