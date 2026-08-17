@@ -1,267 +1,34 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="estilos/styleDesafio01.css">
 </head>
 <body>
-    <style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-body{
-    background:#f5f5f5;
-    display:flex;
-    justify-content:center;
-    padding:30px;
-}
-
-.container{
-    width:1100px;
-    background:#fff;
-    padding:20px;
-}
-
-.titulo{
-    text-align:center;
-    font-size:42px;
-    letter-spacing:5px;
-    color:#666;
-    margin-bottom:25px;
-    border-top:3px solid red;
-    padding-top:15px;
-}
-
-.grid{
-    display:grid;
-    grid-template-columns:2fr 1fr;
-    gap:20px;
-}
-
-.principal{
-    display:flex;
-    gap:15px;
-    border-top:2px solid #ddd;
-    padding-top:15px;
-}
-
-.principal img{
-    width:250px;
-    height:150px;
-    object-fit:cover;
-}
-
-.principal h1{
-    font-size:40px;
-    line-height:1.2;
-}
-
-.direita img{
-    width:100%;
-    height:250px;
-    object-fit:cover;
-}
-
-.banner{
-    background:red;
-    color:#fff;
-    padding:12px;
-    font-weight:bold;
-    font-size:18px;
-}
-
-.cards{
-    margin-top:25px;
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:20px;
-}
-
-.card img{
-    width:100%;
-    height:130px;
-    object-fit:cover;
-}
-
-.card p{
-    margin-top:10px;
-    font-size:20px;
-    line-height:1.3;
-}
-
-.lista{
-    display:flex;
-    flex-direction:column;
-    gap:20px;
-}
-
-.item{
-    display:flex;
-    gap:12px;
-}
-
-.item img{
-    width:120px;
-    height:80px;
-    object-fit:cover;
-}
-
-.item p{
-    font-size:18px;
-    line-height:1.3;
-}
-
-.publicidade{
-    margin-top:25px;
-}
-
-.publicidade img{
-    width:100%;
-}
-
-@media(max-width:900px){
-
-    .grid{
-        grid-template-columns:1fr;
-    }
-
-    .cards{
-        grid-template-columns:1fr;
-    }
-
-    .principal{
-        flex-direction:column;
-    }
-
-    .principal img{
-        width: 50px;
-        height:80px;
-    }
-
-    .principal h1{
-        font-size:30px;
-    }
-
-}
-
-</style>
-</head>
-
-<body>
-
-<div class="container">
-
-    <h1 class="titulo">ESPORTE</h1>
-
-    <div class="grid">
-
-        <!-- ESQUERDA -->
-        <div>
-
-            <div class="principal">
-                <img src=>
-
-                <h1>
-                    Corinthians cumpre plano na Libertadores,
-                    mas liga alerta no Brasileirão
-                </h1>
-            </div>
-
-            <div class="cards">
-
-                <div class="card">
-                    <img src="imagem/arbeloa.webp">
-                    <p>
-                        Arbeloa confirma saída do Real e descarta trabalhar com Mourinho
-                    </p>
-                </div>
-
-                <div class="card">
-                    <img src="imagem/felipao 1.webp">
-                    <p>
-                        Felipão diz que interesses externos atrapalharam no 7 a 1:
-                        "poblemático"
-                    </p>
-                </div>
-
-                <div class="card">
-                    <img src="imagem/copa.jpg">
-                    <p>
-                        Fifa anuncia que Copa de 2026 terá salas sensoriais em 
-                        todos os estádios
-                    </p>
-                </div>
-                            <!-- JOÃO FONSECA -->
-                <div class="card">
-                    <img src="imagem/joao fonseca 1.webp">
-                    <p>
-                        Cossenza: Por que o sorteio de Roland Garros não foi
-                        tão bom para João Fonseca
-                    </p>
-                </div>
-
-                </div>
-            <div class="publicidade">
-                <img src="">
-            </div>
-
+    <div class="linha"></div>
+    <div class="menu">
+        <h1>PAULINHO LOKO</h1>
+    </div>
+    <div class="linha"></div>
+    <div class="cont_pai">
+        <div class="cont_f1">
+            <div class="cont_neto1"></div>
+            <div class="cont_neto2"></div>
+            <div class="cont_neto3"></div>
+            <div class="cont_neto4"></div>
+            <div class="cont_neto5"></div>
+            <div class="cont_neto6"></div>
         </div>
-
-        <!-- DIREITA -->
-        <div>
-
-            <div class="direita">
-                <img src="imagem/barboza 1.jpg">
-
-                <div class="banner">
-                    Barbosa exalta títulos em despedida do Botafogo:
-                    'Dei tudo de mim'
-                </div>
-            </div>
-
-            <div class="lista">
-
-                <div class="item">
-                    <img src="imagem/palmer.webp">
-                    <p>
-                        Sem Foden, Palmer e Alexander-Arnold, Inglaterra 
-                        divulga lista para a copa; veja
-                    </p>
-                </div>
-
-                <div class="item">
-                    <img src="imagem/surf isa 1.avif">
-                    <p>
-                        Surfe: ISA anuncia Mundial no Peru e 
-                        abre circo olimpico rumo A Los Angeles 2028
-                    </p>
-                </div>
-
-                <div class="item">
-                    <img src="imagem/michael.jpg">
-                    <p>
-                        Michael Carrick é efetivado no Manchester United
-                        e fecha até 2028
-                    </p>
-                </div>
-
-            </div>
-
+        <div class="cont_f2">
+            <div class="cont_neto7"></div>
+            <div class="cont_neto8"></div>
+            <div class="cont_neto9"></div>
+            <div class="cont_neto10"></div>
+            <div class="cont_neto11"></div>
         </div>
 
     </div>
-
-</div>
-
-</body>
-</html>
-
-    
 </body>
 </html>
